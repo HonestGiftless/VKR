@@ -1,0 +1,152 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: Unbounded;
+    color: white;
+    text-align: center;
+}
+
+.table_block {
+    margin-bottom: 2vh;
+    display: flex;
+    padding: 1% 5% 0 5%;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    font-family: Inter;
+    margin: 5vh 0 0 0;
+}
+
+td, th {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+td > a {
+    color: white;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+td > a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll_block {
+    width: 90vh;
+    overflow-x: scroll;
+    padding: 0;
+}
+
+.scroll_block ::-webkit-scrollbar {
+    padding-top: 1vh;
+    height: 1vh;
+    background-color: #f9f9fd;
+}
+
+.scroll_block::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(34, 34, 99);
+}
+
+.scroll_block::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+#grade_modal {
+    display: none;
+}
+
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: Inter;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal_content > h3 {
+    margin-bottom: 2vh;
+}
+
+#grade_input {
+    font-family: Inter;
+}
+
+.modal_content > button {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.modal_content > button:hover,
+.modal_content > button:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    cursor: pointer;
+}
+
+#grade_input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+}
+
+td > a {
+    padding: 2%;
+    border-radius: 10%;
+}
+
+.five_color {
+    background-color: rgba(46, 186, 46, 0.624);
+}
+
+.four_color {
+    background-color: rgba(156, 186, 46, 0.624);
+}
+
+.three_color {
+    background-color: rgba(186, 165, 46, 0.624);
+}
+
+.two_color {
+    background-color: rgba(186, 74, 46, 0.624);
+}
+
+.one_color {
+    background-color: rgba(186, 46, 46, 0.624);
+}
+
+h3 {
+    font-family: Inter;
+    color: white;
+    margin-top: 2vh;
+}
+
+.task_for_group {
+    color: rgba(255, 255, 255, 0.5);
+}

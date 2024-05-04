@@ -1,0 +1,177 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: Unbounded;
+    color: white;
+    text-align: center;
+}
+
+.filters {
+    margin-top: 4vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#inGroupBtn {
+    margin-right: 5vh;
+}
+
+.filters input {
+    font-family: Inter;
+}
+
+.filter-btn,
+.add-button {
+    color: white;
+    background: none;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.form-container > input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.filter-btn:hover, 
+.filter-btn:focus,
+.add-button:hover,
+.add-button:focus,
+.form-container > input[type=submit]:hover,
+.form-container > input[type=submit]:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 white; }
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    font-family: Inter;
+    margin: 5vh 0 2vh 0;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 1em;
+}
+
+.form-block,
+.form-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-block {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 1vh;
+
+    color: white;
+    font-family: Inter;
+}
+
+.form-container > input[type=text],
+.form-container > input[type=date] {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+}
+
+.checkbox-wrapper-23 *,
+.checkbox-wrapper-23 *:after,
+.checkbox-wrapper-23 *:before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-23 input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-wrapper-23 input:checked + label svg path {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-23 input:focus + label {
+    transform: scale(1.03);
+}
+
+.checkbox-wrapper-23 input + label {
+    display: block;
+    border: 2px solid white;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.checkbox-wrapper-23 input + label:active {
+    transform: scale(1.05);
+    border-radius: 12px;
+}
+
+.checkbox-wrapper-23 input + label svg {
+    pointer-events: none;
+    padding: 5%;
+}
+
+.checkbox-wrapper-23 input + label svg path {      
+    fill: none;     
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 101;
+    transition: all 250ms cubic-bezier(1,0,.37,.91);
+}
+
+#pagination {
+    display: flex;
+    column-gap: 3px;
+    justify-content: center;
+}
+
+.pagination-link {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid white;
+
+    color: white;
+    font-family: Inter;
+}
+
+td > a {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+td > a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}

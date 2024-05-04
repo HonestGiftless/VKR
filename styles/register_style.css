@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --navigation: #2b2b2b;
+    --main: #141414;
+    --dark_text: rgba(255, 255, 255, 0.5);
+
+    background-color: var(--main);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Unbounded;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 2%;
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: Inter;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+    padding-left: 1%;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: .7em .7em;
+}
+
+input[type=submit]:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 white; }
+}
+
+label {
+    color: white;
+    font-family: Inter;
+
+    margin-bottom: 2%;
+}
+
+.checkbox-wrapper *,
+.checkbox-wrapper *:after,
+.checkbox-wrapper *:before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-wrapper input:checked + label svg path {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper input:focus + label {
+    transform: scale(1.03);
+}
+
+.checkbox-wrapper input + label {
+    display: block;
+    border: 2px solid white;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.checkbox-wrapper input + label:active {
+    transform: scale(1.05);
+    border-radius: 12px;
+}
+
+.checkbox-wrapper input + label svg {
+    pointer-events: none;
+    padding: 1%;
+}
+
+.checkbox-wrapper input + label svg path {      
+    fill: none;     
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 101;
+    transition: all 250ms cubic-bezier(1,0,.37,.91);
+}
+
+.error_password {
+    color: white;
+    font-family: Inter;
+}
+
+a {
+    color: white;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 0 0 3% 0;
+    }
+
+    label {
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 0 0 10% 0;
+    }
+
+    label {
+        margin-bottom: 2%;
+    }
+}

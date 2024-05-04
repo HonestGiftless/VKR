@@ -1,0 +1,233 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3 {
+    font-family: Unbounded;
+    color: white;
+    text-align: center;
+}
+
+.filters {
+    margin-top: 4vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#inGroupBtn {
+    margin-right: 5vh;
+}
+
+.filters input {
+    font-family: Inter;
+}
+
+.filter-btn,
+.add-button,
+.delete-button,
+#deleter {
+    color: white;
+    background: none;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.form-container > input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.filter-btn:hover, 
+.filter-btn:focus,
+.add-button:hover,
+.add-button:focus,
+.form-container > input[type=submit]:hover,
+.form-container > input[type=submit]:focus,
+.delete-button:hover,
+.delete-button:focus,
+#deleter:hover,
+#deleter:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 white; }
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    font-family: Inter;
+    margin: 5vh 0 2vh 0;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 1em;
+}
+
+.form-block,
+.form-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-block {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 1vh;
+
+    color: white;
+    font-family: Inter;
+}
+
+.form-container > input[type=text] {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+}
+
+.form-container > select {
+    background: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.form-container > select > option {
+    color: black;
+    font-size: 1.1em;
+}
+
+#pagination {
+    display: flex;
+    column-gap: 3px;
+    justify-content: center;
+}
+
+.pagination-link {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid white;
+
+    color: white;
+    font-family: Inter;
+}
+
+#grade_modal,
+#group_modal,
+#notes_modal {
+    display: none;
+}
+
+.modal_content,
+.group_modal_content,
+.notes_modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: Inter;
+}
+
+.close:hover,
+.close_group:hover,
+.close_notes {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal_content > h3,
+.group_modal_content > h3,
+.notes_modal_content > h3 {
+    margin-bottom: 2vh;
+}
+
+#grade_input,
+#take_group,
+#notes_input {
+    font-family: Inter;
+}
+
+.modal_content > button,
+.group_modal_content > button,
+.notes_modal_content > button {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.modal_content > button:hover,
+.modal_content > button:focus,
+.group_modal_content > button:hover,
+.group_modal_content > button:focus,
+.notes_modal_content > button:hover,
+.notes_modal_content > button:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    cursor: pointer;
+}
+
+#grade_input,
+#notes_input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+}
+
+#take_group {
+    background: #141414;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+}
+
+.name_link,
+.group_link,
+.notes_link {
+    color: white;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+.name_link:hover,
+.group_link:hover,
+.notes_link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#delete_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --navigation: #2b2b2b;
+    --main: #141414;
+    --dark_text: rgba(255, 255, 255, 0.5);
+
+    background-color: var(--main);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+h2 {
+    font-family: Unbounded;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 2%;
+}
+
+.auth_form,
+.recovery_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: Inter;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+    padding-left: 1%;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: .7em .7em;
+}
+
+input[type=submit]:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 white; }
+}
+
+.error {
+    color: white;
+    font-family: Inter;
+}
+
+a,
+label {
+    color: white;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+label {
+    margin-bottom: 2%;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 0 0 3% 0;
+    }
+
+    label {
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 0 0 10% 0;
+    }
+
+    label {
+        margin-bottom: 2%;
+    }
+}

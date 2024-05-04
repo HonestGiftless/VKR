@@ -1,0 +1,66 @@
+.form_add_date {
+    margin-top: 2vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form_add_date > input {
+    margin-bottom: 2vh;
+}
+
+#days_per_week {
+    margin-bottom: 0;
+}
+
+.form_add_date > input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    font-family: Inter;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    margin-bottom: 2vh;
+}
+
+.form_add_date {
+    color: white;
+    font-family: Inter;
+}
+
+#start_date, #end_date, #days_per_week {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1em;
+}
+
+#add_list {
+    margin-top: 2vh;
+}
+
+#add_list:hover,
+#add_list:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 white; }
+}
+
+#checkbox_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+td > a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.not {
+    background-color: rgba(186, 46, 46, 0.624);
+}

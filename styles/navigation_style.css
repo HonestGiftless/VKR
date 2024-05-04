@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --navigation: #2b2b2b;
+    --main: #141414;
+    --dark_text: rgba(255, 255, 255, 0.5);
+
+    background-color: var(--main);
+    height: 100vh;
+}
+
+.navigation_container {
+    height: 100vh;
+    width: 10vh;
+    position: fixed;
+
+    background-color: var(--navigation);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2vh;
+}
+
+.students_container,
+.user_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.students_container {
+    justify-content: flex-start;
+}
+
+.user_container {
+    justify-content: flex-end;
+    padding-bottom: 4vh;
+}
+
+.students_container > a,
+.user_container > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Inter;
+    color: white;
+    text-decoration: none;
+
+}
+
+.students_container > a > img,
+.user_container > a > img {
+    width: 60%;
+}
+
+.students_container a:not(:last-child) {
+    margin-bottom: 2vh;
+}
+
+.user_container a:last-child {
+    margin-top: 2vh;
+}
+
+.students_container > a:hover,
+.user_container > a:hover {
+    color: var(--dark_text);
+}
+
+.main_container {
+    padding-left: 14vh;
+    padding-top: 2vh;
+}
